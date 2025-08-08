@@ -2,6 +2,8 @@
 
 This project provides a FastAPI-based API to process videos for object detection using YOLOv5 and Celery.
 
+![SC](./static/yolo_detection2.png)
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -91,4 +93,4 @@ The processed video will be available at the `output_s3_url` once the Celery tas
 
 ![SC3](./static/S3Bucket1.png)
 
-![SC3](./static/s3Bucket2.png)
+![SC4](./static/s3Bucket2.png)
