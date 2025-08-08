@@ -2,12 +2,19 @@ import cv2
 import torch
 import os
 
-print("Current working directory:", os.getcwd())
+import boto3
 
-# Load the YOLOv5 model (pretrained)
-model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
+
+print("Current working directory:", os.getcwd())
+model = None
+
+def load_model():
+    global model
+    if model is None:
+        model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
 
 def process_video(input_video_path: str, output_video_path: str):
+    load_model()
     cap = cv2.VideoCapture(input_video_path)
 
     if not cap.isOpened():
