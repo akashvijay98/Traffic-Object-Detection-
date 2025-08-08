@@ -2,7 +2,7 @@
 
 This project provides a FastAPI-based API to process videos for object detection using YOLOv5 and Celery.
 
-![SC](./static/yolo_detection2.png)
+![SC](./traffic_detection/static/yolo_detection2.png)
 
 ## Prerequisites
 
@@ -66,8 +66,6 @@ You can test the API by sending a video file through Postman.
     *   In the `VALUE` column, click the dropdown and select **File**.
     *   Click **Select Files** and choose a video file (e.g., a `.mp4` file) from your local machine.
 
-    ![Postman Configuration](https://i.imgur.com/your-postman-screenshot.png) <!-- You can replace this with an actual screenshot if you wish -->
-
 3.  **Send the request.**
 
 ### Expected Response
@@ -87,10 +85,10 @@ The processed video will be available at the `output_s3_url` once the Celery tas
 
 ## ScreenShots
 
-![SC1](./static/api_request_response.png)
+![SC1](./traffic_detection/static/api_request_response.png)
 
-![SC2](./static/celery_task_output.png)
+![SC2](./traffic_detection/static/celery_task_output.png)
 
-![SC3](./static/S3Bucket1.png)
+![SC3](./traffic_detection/static/S3Bucket1.png)
 
-![SC4](./static/s3Bucket2.png)
+![SC4](./traffic_detection/static/s3Bucket2.png)
