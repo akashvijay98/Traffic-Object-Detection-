@@ -82,3 +82,13 @@ If the request is successful, you will receive a JSON response similar to this:
 ```
 
 The processed video will be available at the `output_s3_url` once the Celery task is complete.
+
+## ScreenShots
+
+![SC1](./static/api_request_response.png)
+
+![SC2](./static/celery_task_output.png)
+
+![SC3](./static/S3Bucket1.png)
+
+![SC3](./static/s3Bucket2.png)
